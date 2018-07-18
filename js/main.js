@@ -1,20 +1,24 @@
 var button = document.querySelector("button");
-var isPurple = false;
+// var isPurple = false;
 
-button.addEventListener("click", function() {
+// button.addEventListener("click", function() {
 	//if white
 	 //make it purple
 	//else
 	 //make it white
 
-	if(isPurple) {
-		document.body.style.background = "white";
+	// if(isPurple) {
+	// 	document.body.style.background = "white";
 		// isPurple = false;
-	} else {
-		document.body.style.background = "purple";
+	// } else {
+	// 	document.body.style.background = "purple";
 		// isPurple = true;
-	}
-	isPurple = !isPurple;
+// 	}
+// 	isPurple = !isPurple;
+// });
+
+button.addEventListener("click", function() {
+	document.body.classList.toggle("purple");
 });
 
 
